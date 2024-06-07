@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <nav>
-      <!-- <img src="@/assets/ninja.png" /> -->
+      <img src="@/assets/headphone.png" />
       <h1><router-link :to="{ name: 'Home' }">Playlist APP</router-link></h1>
       <div class="links">
         <div v-if="user">
@@ -17,11 +17,6 @@
 </template>
 
 <script>
-// challenge
-//   - only show the logout button if we are logged in
-//   - only show the signup and login links if we are not logged in
-//   - use the getUser composable to help
-
 import getUser from "../composables/getUser"
 import useLogout from "../composables/useLogout"
 import { useRouter } from "vue-router"
