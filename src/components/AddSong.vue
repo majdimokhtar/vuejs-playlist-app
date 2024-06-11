@@ -26,7 +26,7 @@ export default {
       const newSong = {
         title: title.value,
         artist: artist.value,
-        id: Math.floor(Math.random() * 1000000),
+        id: crypto.randomUUID(),
       }
       const res = await updateDoc({
         songs: [...props.playlist.songs, newSong],
